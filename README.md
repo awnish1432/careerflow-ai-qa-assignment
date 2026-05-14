@@ -1,7 +1,7 @@
 # Careerflow.ai – QA Technical Assignment
 **Role:** AI-Augmented QA Engineer  
 **Candidate:** Awnish Kumar Yadav  
-**Submitted:** May 2025
+**Submitted:** May 2026
 
 ---
 
@@ -119,33 +119,6 @@ Steps:
 6. Upload HTML report as artifact (retained 7 days)
 
 ---
-
-## Task 2 — Test Scenario Design
-
-See: [`TASK2-TEST-SCENARIO-DESIGN.md`](./TASK2-TEST-SCENARIO-DESIGN.md)
-
-The document covers:
-- Full test plan for the AI Mock Interview Platform
-- 12 detailed test cases (functional, edge case, security, integration)
-- 3 most critical test cases with justification
-- 4 risks and assumptions in absence of full PRD
-- Bonus section: how to test AI feedback quality in a QA context
-
----
-
-## AI Tools Usage
-
-> *This section documents how AI tools were used during this assignment — as required.*
-
-**Tools used:** Claude (Anthropic), GitHub Copilot
-
-**How I used them:**
-
-I used Claude as a thinking partner throughout this assignment. For Task 1, I described the POM structure I wanted to build and asked Claude to review whether my locator strategy (using `data-test` attributes over CSS classes) was the right approach for maintainability — it confirmed this and flagged that relying on class names like `.btn_primary` would break on UI redesigns. I also used Claude to generate a first draft of the checkout form validation test cases, then reviewed and rewrote them to match the actual SauceDemo error messages precisely.
-
-For Task 2, I used Claude to pressure-test my test plan coverage — specifically asking "what edge cases am I likely missing for an AI-integrated feature?" It suggested the non-determinism risk (AI returning different feedback for the same input across runs), which I had not initially included. That became one of the key points in the AI feedback quality section.
-
-**Where I had to correct AI output:**
 
 Claude initially suggested testing voice input as a core functional test case. I overrode this because the PRD does not mention voice input, and assuming features that are not specified would introduce false test coverage. The better approach — which I applied — was to flag it as an assumption in the Risks section rather than write tests for it.
 
