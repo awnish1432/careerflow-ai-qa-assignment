@@ -23,9 +23,6 @@ careerflow-qa-assignment/
 │       └── playwright.yml        # GitHub Actions CI pipeline
 ├── playwright.config.ts
 ├── package.json
-├── TASK2-TEST-SCENARIO-DESIGN.md # Task 2 – AI Mock Interview test plan
-└── README.md
-```
 
 ---
 
