@@ -117,9 +117,3 @@ Steps:
 4. Install Chromium browser
 5. Run Playwright tests
 6. Upload HTML report as artifact (retained 7 days)
-
----
-
-Claude initially suggested testing voice input as a core functional test case. I overrode this because the PRD does not mention voice input, and assuming features that are not specified would introduce false test coverage. The better approach — which I applied — was to flag it as an assumption in the Risks section rather than write tests for it.
-
-GitHub Copilot was used for boilerplate autocomplete (import statements, TypeScript type annotations) but all test logic, assertions, and POM method design were written and reviewed manually.
